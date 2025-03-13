@@ -1,8 +1,7 @@
 substitutions:
   name: m5stack-atom-echo
   friendly_name: M5Stack Atom Echo
-  micro_wake_word_model: https://github.com/djcath/hommeassistant/raw/refs/heads/main/chaos.json  # alexa, hey_jarvis, hey_mycroft are also supported
-
+  micro_wake_word_model:  github://djcath/hommeassistant/chaos.json
 
 esphome:
   name: ${name}
@@ -96,7 +95,7 @@ voice_assistant:
   media_player: echo_media_player
   noise_suppression_level: 2
   auto_gain: 31dBFS
-  volume_multiplier: 3.0
+  volume_multiplier: 2.0
   on_listening:
     - light.turn_on:
         id: led
