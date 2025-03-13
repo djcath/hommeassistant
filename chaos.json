@@ -1,6 +1,6 @@
 {
   "type": "micro",
-  "wake_word": "Chaos",
+  "wake_word": "chaos",
   "author": "djcath14",
   "website": "https://videos.com/",
   "model": "chaos.tflite",
