@@ -340,6 +340,5 @@ micro_wake_word:
   on_wake_word_detected:
     - voice_assistant.start:
         wake_word: !lambda return wake_word;
-  vad:
   models:
     - model: ${micro_wake_word_model}
