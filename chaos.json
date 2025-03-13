@@ -3,7 +3,7 @@
   "wake_word": "chaos",
   "author": "djcath14",
   "website": "https://www.video.com/",
-  "model": "./chaos.tflite",
+  "model": "chaos.tflite",
   "version": 2,
   "micro": {
     "probability_cutoff": 0.9,
