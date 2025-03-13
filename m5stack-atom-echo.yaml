@@ -1,7 +1,7 @@
 substitutions:
   name: m5stack-atom-echo
   friendly_name: M5Stack Atom Echo
-  micro_wake_word_model:  "https://github.com/djcath/hommeassistant/raw/refs/heads/main/chaos.json"
+  micro_wake_word_model: https://github.com/djcath/hommeassistant/raw/refs/heads/main/chaos.json
 
 esphome:
   name: ${name}
@@ -340,5 +340,6 @@ micro_wake_word:
   on_wake_word_detected:
     - voice_assistant.start:
         wake_word: !lambda return wake_word;
+  vad:
   models:
     - model: ${micro_wake_word_model}
