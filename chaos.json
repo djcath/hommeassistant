@@ -2,7 +2,7 @@
   "type": "micro",
   "wake_word": "chaos",
   "author": "djcath14",
-  "model": "chaos.tflite",
+  "model": "./chaos.tflite",
   "version": 2,
   "micro": {
     "probability_cutoff": 0.95,
