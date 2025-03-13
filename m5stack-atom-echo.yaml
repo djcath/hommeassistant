@@ -1,6 +1,7 @@
 substitutions:
-  name: bedassistant
-  friendly_name: BedAssistant
+  name: m5stack-atom-echo
+  friendly_name: M5Stack Atom Echo
+  micro_wake_word_model: https://github.com/djcath/hommeassistant/raw/refs/heads/main/chaos.json  # alexa, hey_jarvis, hey_mycroft are also supported
 
 
 esphome:
@@ -18,16 +19,13 @@ esp32:
 
 logger:
 api:
-  encryption:
-    key: ARy4/Ee5JSrDu8vSTE6qUzvOvYTHrh2cQJesXA86BPw=
 
 ota:
   - platform: esphome
-    password: "426c8a8005461953fa17550d9e346f03"
+    id: ota_esphome
 
 wifi:
-  ssid: !secret wifi_ssid
-  password: !secret wifi_password
+  ap:
 
 captive_portal:
 
@@ -345,4 +343,4 @@ micro_wake_word:
         wake_word: !lambda return wake_word;
   vad:
   models:
-    - model: https://github.com/djcath/hommeassistant/raw/refs/heads/main/chaos.json
+    - model: ${micro_wake_word_model}
