@@ -4,7 +4,7 @@
   "author": "djcath14",
   "website": "https://www.video.com/",
   "model": "./chaos.tflite",
-  "version": 1,
+  "version": 2,
   "micro": {
     "probability_cutoff": 0.9,
     "sliding_window_average_size": 10
